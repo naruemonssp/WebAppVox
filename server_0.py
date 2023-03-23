@@ -12,7 +12,8 @@ def index():
 def upload():
     file = request.files['image']
     image = Image.open(file)
-    processed_image.save('static/jpg test.jpg')
+    # processed_image = image
+    # processed_image.save('static/output1.png')
     return render_template('upload_completed.html') #ไปหน้า complete
     
 
